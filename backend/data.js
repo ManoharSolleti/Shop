@@ -9,16 +9,18 @@ export default {
       brand: 'Nike',
       rating: 4.2,
       numReviews: 10,
+      countInStock: 6,
     },
     {
       _id: '2',
-      name: 'Fit Shirt',
+      name: 'Slim Shirt',
       category: 'Shirts',
       image: '/images/d1.jpg',
-      price: '60',
+      price: '45',
       brand: 'Nike',
-      rating: 4.5,
-      numReviews: 7,
+      rating: 4.4,
+      numReviews: 12,
+      countInStock: 8,
     },
     {
       _id: '3',
@@ -29,6 +31,7 @@ export default {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 18,
+      countInStock: 11,
     },
     {
       _id: '4',
@@ -39,6 +42,7 @@ export default {
       brand: 'Nike',
       rating: 4.2,
       numReviews: 5,
+      countInStock: 9,
     },
   ],
 };
