@@ -8,8 +8,8 @@ export default function RegisterScreen(props) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
-  const userSignin = useSelector((state) => state.userSignin);
-  const { loading, userInfo, error } = userSignin;
+  const userRegister = useSelector((state) => state.userRegister);
+  const { loading, userInfo, error } = userRegister;
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function RegisterScreen(props) {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(register(email, password));
+    dispatch(register(name, email, password));
   };
 
   return (
@@ -67,7 +67,7 @@ export default function RegisterScreen(props) {
           <li>
             <label htmlFor="repassword">Retype Password</label>
             <input
-              type="repassword"
+              type="password"
               name="repassword"
               id="repassword"
               onChange={(e) => setRePassword(e.target.value)}
